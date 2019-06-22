@@ -1,0 +1,31 @@
+.deck {
+	margin-top: 75px;
+}
+
+h1 {
+	font-size: 4rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.btn {
+	background: none;
+	border: 1px solid #34e873;
+	color: #34e873;
+	height: 60px;
+	width: 180px;
+	box-shadow: 0.1px 0.1px 5px 4px rgba(255, 255, 255, 0.2);
+	border-radius: 7px;
+	font-size: 1.2rem;
+	letter-spacing: 1.1px;
+	outline: none;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.btn:hover {
+	background-color: #34e873;
+	border: 1px solid #34e873;
+	color: #2f2f2f;
+	cursor: pointer;
+}
