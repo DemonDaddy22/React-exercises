@@ -1,0 +1,15 @@
+.Lottery {
+	width: 500px;
+	height: 250px;
+	background-color: #e0e0e0;
+	padding-top: 20px;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 50px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.Lottery-balls {
+	display: flex;
+	justify-content: center;
+}

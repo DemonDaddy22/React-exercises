@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
+body {
+	margin: 0;
+	background: #40e0d0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ff0080,
+		#ff8c00,
+		#40e0d0
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Roboto Mono', monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	width: 60%;
+}

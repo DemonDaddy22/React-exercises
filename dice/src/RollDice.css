@@ -1,0 +1,30 @@
+.RollDice {
+	margin: auto;
+}
+
+.RollDice-Dies {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.RollDice-button {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.RollDice-btn {
+	border: none;
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+	color: white;
+	background-color: #3b2b2b;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.RollDice-btn:hover {
+	background-color: slateblue;
+	cursor: pointer;
+}
