@@ -12,6 +12,10 @@ const styles = (theme) => ({
 			display: 'block'
 		}
 	},
+	menuButton: {
+		paddingTop: 0,
+		fontSize: '1.25rem'
+	},
 	search: {
 		position: 'relative',
 		borderRadius: theme.shape.borderRadius,
