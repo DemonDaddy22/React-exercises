@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from './contexts/Theme.context';
+import { LanguageProvider } from './contexts/Language.context';
 import Navbar from './Navbar';
 import './App.css';
 import Form from './Form';
@@ -9,11 +10,13 @@ class App extends Component {
 	render() {
 		return (
 			<ThemeProvider>
-				<PageContent>
-					<Navbar />
-					<Form />
-				</PageContent>
-        </ThemeProvider>
+				<LanguageProvider>
+					<PageContent>
+						<Navbar />
+						<Form />
+					</PageContent>
+				</LanguageProvider>
+			</ThemeProvider>
 		);
 	}
 }

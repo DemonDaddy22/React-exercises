@@ -6,6 +6,8 @@ const styles = (theme) => ({
 		marginBottom: 0
 	},
 	title: {
+		marginLeft: '2rem',
+		letterSpacing: '1.2px',
 		flexGrow: 1,
 		display: 'none',
 		[theme.breakpoints.up('sm')]: {
@@ -13,7 +15,7 @@ const styles = (theme) => ({
 		}
 	},
 	menuButton: {
-		paddingTop: 0,
+		paddingTop: '0.5rem',
 		fontSize: '1.25rem'
 	},
 	search: {
