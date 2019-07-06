@@ -1,6 +1,7 @@
-import React, { createContext } from 'react';
+import React, { createContext, useReducer } from 'react';
 import useTodo from '../hooks/useTodo';
 import uuid from 'uuid/v4';
+import TodosReducer from '../reducers/todo.reducer';
 
 const defaultTodos = [
 	{ id: uuid(), task: 'Clean fishtank', completed: false },
@@ -11,6 +12,6 @@ const defaultTodos = [
 export const TodosContext = createContext();
 
 export function TodosProvider(props) {
-	const TodoUtils = useTodo(defaultTodos);
-	return <TodosContext.Provider value={TodoUtils}>{props.children}</TodosContext.Provider>;
+	const [ todos, dispatch ] = useReducer(TodosReducer, defaultTodos);
+	return <TodosContext.Provider value={{ todos, dispatch }}>{props.children}</TodosContext.Provider>;
 }

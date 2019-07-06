@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import TextField from '@material-ui/core/TextField';
 import useInput from './hooks/useInput';
-import {TodosContext} from './contexts/todos.context';
+import { TodosContext } from './contexts/todos.context';
 
 function EditForm({ task, id, toggle }) {
 	const [ val, handleChange, resetVal ] = useInput(task);
-	const { editTodo } = useContext(TodosContext);
+	const { dispatch } = useContext(TodosContext);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		editTodo(id, val);
+		dispatch({ type: 'EDIT', id: id, task: val });
 		resetVal();
 		toggle();
 	};
